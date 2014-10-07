@@ -22,11 +22,14 @@
     footerRegion: "#footer-region"
 
   App.on "start", (options) ->
+
     App.currentUser = App.request "entities:users:session:model"
 
     App.currentUser.checkUserSession()
     App.currentUser.isGuest()
     App.CoreApp.Users.Controller.users()
+
+    App.module('InitializeApp').start options: options
 
 
     if Backbone.history

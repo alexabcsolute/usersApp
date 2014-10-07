@@ -6,7 +6,8 @@
         @showMenuCollection(layout)
         @showFooterCollection(layout)
         @showListSmartphonesCollection(layout)
-      App.mainRegion.show layout
+      App.bodyLayout.mainRegion.show layout
+
 
   # вызывается после того, когда будет вызван метод render в layout(view)
 
